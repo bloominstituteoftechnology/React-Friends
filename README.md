@@ -20,22 +20,24 @@
   - Step 4: move the `people.js` file from this repo into the `src` directory inside of your new `react-friends` project.
   - Step 5: cd into `react-friends` and run `npm start` or `yarn start` and navigate to `localhost:3000`.
 
-- PeopleList Set Up
+- App/PeopleList Set Up
   - Step 1: inside of `App.js` create your constructor function, (don't forget to super()) and add a state object to it. Inside that state object define an array called People.
   - Step 2: import people data in like so: `import { people } from './people.js` (if you haven't included people in your `src` directory this wont work);
   _ Step 3: create a method called componentDidMount and set the people data on state.
-  
+  - Step 4: create your `PeopleList` as a function component and import it in as: `import {PeopleList} from './PeopleList'`.
+  - Step 5: pass your `People` data down to PeopleList and render out the People List `<PeopleList people={this.state.People} />`.
+  - Step 6: for each person in `PeopleList` render out the first_name and last_name and email.
+  - Step 7: Go to town styling your components!
+
+- Styling Components
+  - Step 1: create a file called PeopleList.css and go to town styling! Try and center each person on the screen. 
+    - Hint: Delete the styles in the app.css and index.css files and do it on your own! Make things look pretty!
+
   ```
   componentDidMount(){ 
    this.setState({People: people});
   }
   ```
-
-- Person Set Up
-  - Step 1: create your `PeopleList` as a function component and import it in as: `import {PeopleList} from './PeopleList'`.
-  - Step 2: pass your `People` data down to PeopleList and render out the People List `<PeopleList people={this.state.People} />`.
-  - Step 3: inside of `PeopleList.js` iterate over the props.people and display a `<Person />` component for each person. 
-  - Step 4: be sure to pass down each person object from the people array to Person `<Person person={person}/>`.
 
 
 ### Examples
@@ -83,7 +85,13 @@ export const PeopleList = (props) => {
   return (
     <div className="People-Wrapper">
       {props.people.map((person => {
-        return <Person key={person.id} person={person}/> 
+        return (
+            <div>
+              <h4>{person.first_name}</h4>
+              <h4>{person.last_name}</h4>
+              <div>{person.email}</div>
+            </div> 
+          )
       }))}
     </div>
   )
