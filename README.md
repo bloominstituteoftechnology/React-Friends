@@ -1,5 +1,7 @@
 # React-II-Mini
 
+[Link to video](https://www.youtube.com/watch?v=0Jtr6SUtJUQ)
+
 ## Topics
 
 * [React's Lifecycle](https://tylermcginnis.com/an-introduction-to-life-cycle-events-in-react-js/)
