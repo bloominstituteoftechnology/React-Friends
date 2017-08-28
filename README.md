@@ -5,7 +5,7 @@
 ## Topics
 
 * [React's Lifecycle](https://tylermcginnis.com/an-introduction-to-life-cycle-events-in-react-js/)
-* Create React App
+* [Create React App](https://github.com/facebookincubator/create-react-app#getting-started) 
 * npm and yarn
 * JSON
 * more on state, and sophisticated data
