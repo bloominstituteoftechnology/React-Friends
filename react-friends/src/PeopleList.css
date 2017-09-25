@@ -1,0 +1,14 @@
+.personInfo {
+    margin: 20px;
+    font-family: sans-serif;
+}
+
+.name {
+font-size: 20px;
+font-weight: 500;
+}
+
+.email {
+font-size: 12px;
+font-weight: 200;
+}
