@@ -1,0 +1,13 @@
+.container {
+    display: flex;
+    height: 300px;    
+    flex-direction: column;
+}
+
+.item {
+    width: 250px;  
+    height: 100px; 
+    margin: auto; 
+    padding: 25px;
+    border: 2px solid black;
+}
