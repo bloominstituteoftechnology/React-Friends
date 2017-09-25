@@ -1,0 +1,17 @@
+.People {
+  margin: 15px auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  justify-items: center;
+  grid-row-gap: 25px;
+  padding: 0 25px;
+}
+
+.Name {
+  font-size: 2rem;
+}
+
+.Email {
+  margin-top: 10px;
+}
