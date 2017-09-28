@@ -1,1 +1,9 @@
-/react-friends
+/react-friends/node_modules
+/react-friends/public
+/react-friends/.gitignore
+/react-friends/package-lock.json
+/react-friends/package.json
+/react-friends/README.md
+/react-friends/src/logo.svg
+/react-friends/src/index.css
+/react-friends/src/index.js

@@ -26,7 +26,7 @@
 - App/PeopleList Set Up
   - Step 1: inside of `App.js` create your constructor function, (don't forget to super()) and add a state object to it. Inside that state object define an array called People.
   - Step 2: import people data in like so: `import { people } from './people.js` (if you haven't included people in your `src` directory this wont work);
-  _ Step 3: create a method called componentDidMount and set the people data on state.
+  _ Step 3: create a method called `componentDidMount` and set the people data on state.
   - Step 4: create your `PeopleList` as a function component and import it in as: `import {PeopleList} from './PeopleList'`.
   - Step 5: pass your `People` data down to PeopleList and render out the People List `<PeopleList people={this.state.People} />`.
   - Step 6: for each person in `PeopleList` render out the first_name and last_name and email.
