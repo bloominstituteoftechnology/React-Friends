@@ -1,4 +1,4 @@
-# React-II-Mini
+# React-II-Guided Project
 
 [Link to video](https://www.youtube.com/watch?v=0Jtr6SUtJUQ)
 
