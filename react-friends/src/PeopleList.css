@@ -1,0 +1,22 @@
+.App {
+    text-align: center;
+    color: navy;
+    font-family: sans-serif;
+}
+
+.PeopleList {
+    position: absolute;
+    text-align: center;
+    margin-left: 42%;
+    margin-top: 1%;
+    max-width: 50%;
+
+}
+
+.Person {
+    background-color: #0074D9;
+    border: double;
+    margin: 15px;
+
+
+}
