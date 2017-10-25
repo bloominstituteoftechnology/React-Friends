@@ -1,0 +1,17 @@
+.people {
+    text-align: center;
+}
+.person {
+    box-sizing: border-box;
+    width: 70%;
+    margin: 20px auto;
+    max-width: 400px;
+    padding: 20px;
+    box-shadow: 0px 2px 2px 1px rgba(0, 0, 0, 0.25)
+}
+.person h1 {
+    font-size: 20px;
+}
+.person h2 {
+    font-size: 16px;
+}
