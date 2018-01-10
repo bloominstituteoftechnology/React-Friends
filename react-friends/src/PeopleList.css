@@ -1,0 +1,22 @@
+.PeopleList {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  list-style-type: none;
+  align-items: center;
+}
+.Person {
+  height: 100px;
+  width: 250px;
+}
+
+.Name-Header {
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.Email-Title {
+  font-size: 13px;
+  font-weight: 300;
+}
