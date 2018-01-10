@@ -1,0 +1,23 @@
+.table {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.table-body {
+    border: solid;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+th {
+    font-size: xx-large;
+    padding-right: 10px;
+
+}
+
+td {
+    font-size: x-large;
+}
