@@ -1,0 +1,11 @@
+.PeopleList {
+  list-style-type: none;
+}
+
+.PeopleList__person {
+  margin-top: 20px;
+}
+
+.PeopleList__friend {
+  font-style: italic;
+}
