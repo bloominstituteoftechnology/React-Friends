@@ -8,9 +8,9 @@ export const PeopleList = props => {
             {props.people.map((person => {
                 return (
                     <div>
-                        <h4>{person.first_name}</h4>
-                        <h4>{person.last_name}</h4>
-                        <div>{person.email}</div>
+                        <h4>First: {person.first_name}</h4>
+                        <h4>Last: {person.last_name}</h4>
+                        <div>Email: {person.email}</div>
                     </div>
                 )
             }))}
