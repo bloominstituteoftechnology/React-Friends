@@ -1,0 +1,12 @@
+div {
+    border-bottom: 1px solid black;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-family: sans-serif;
+}
+.list {
+    background-color:  gray;
+    color: white;
+}
