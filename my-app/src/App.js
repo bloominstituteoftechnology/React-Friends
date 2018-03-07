@@ -1,8 +1,18 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import { people } from './people'
 
 class App extends Component {
+    constructor () {
+      super();
+      this.state = {
+          People: [],
+      };
+    }
+    componenetDidMount (){
+      this.setState({People: people})
+    }
   render() {
     return (
       <div className="App">
