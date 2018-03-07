@@ -3,7 +3,7 @@ import './PeopleList.css';
 
 const PeopleList = props => {
   return (
-    <div>
+    <div className="PeopleDiv">
       {props.people.map(person => {
         return (
           <div className="PeopleList" key={person.id}>
