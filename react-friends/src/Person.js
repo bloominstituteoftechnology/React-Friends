@@ -10,8 +10,10 @@ class Person extends Component {
 
   render() {
     return (
-    <div>
-      <span>{this.props.data.first_name} {this.props.data.last_name} {this.props.data.email}</span>
+    <div class="person">
+      <span>{this.props.data.first_name}</span>
+      <span> {this.props.data.last_name}</span>
+      <span class="email"> {this.props.data.email}</span>
     </div>
     );
   }
