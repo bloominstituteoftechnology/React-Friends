@@ -1,0 +1,12 @@
+.person_List{
+    display: flex;
+    justify-content: center;
+}
+.person_ListItem{
+    border: 1px black solid;
+    list-style: none;
+    text-align: center;
+    margin: 10px;
+    padding: 5px;
+    
+}

@@ -1,5 +1,5 @@
 import React from 'react';
-
+import "./PeopleList.css";
 
 const PeopleList = props => {
     const { name, People } = props;
@@ -9,10 +9,10 @@ const PeopleList = props => {
             {People.map(person => {
                 return (
                     <div key={person.last_name}>
-                    <ul>
-                     <li className="listItem">{person.first_name}</li>
-                     <li className="listItem">{person.last_name}</li>
-                     <li className="listItem">{person.email}</li>
+                    <ul className="person_List">
+                     <li className="person_ListItem">{person.first_name}</li>
+                     <li className="person_ListItem">{person.last_name}</li>
+                     <li className="person_ListItem">{person.email}</li>
                     </ul>
                     </div>
                 );

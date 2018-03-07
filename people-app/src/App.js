@@ -21,7 +21,7 @@ componentDidMount() {
 
 render(){
     console.log("Rendering...")
-    return <PeopleList className="peopleList" name={this.state.name} People={this.state.People} />;
+    return <PeopleList name={this.state.name} People={this.state.People} />;
       
 }
 
