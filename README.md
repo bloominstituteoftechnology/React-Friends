@@ -1,51 +1,55 @@
 # React-II-Guided Project
 
-[Link to video](https://www.youtube.com/watch?v=0Jtr6SUtJUQ)
+* This mini project is designed to get you used to how components can be built around data that is a bit more complicated, and that doesn't just necessarily exist on a component's state. We're going to be using an external data source (although it'll be found locally in our project) from a file in our app called `people.js`. Your goal is to use `componentDidMount` to set that data on the state of the component you'll be building, and consuming it within a `render` function.
 
 ## Topics
 
 * [React's Lifecycle](https://tylermcginnis.com/an-introduction-to-life-cycle-events-in-react-js/)
-* [Create React App](https://github.com/facebookincubator/create-react-app#getting-started) 
-* npm and yarn
+* componentDidMount
+* render
 * JSON
-* more on state, and sophisticated data
 * this.setState
 * props
-* Flexbox
-* className
+* className for styling react components
 
-## Lesson Battle Plan 
+## Before you get started
 
-- Steps to get up and running
-  - Step 1: fork and clone this project and cd into it.
-  - Step 2: run `npm install create-react-app -g` to install CRA locally.
-  - Step 3: run `create-react-app react-friends`.
-  - Step 4: move the `people.js` file from this repo into the `src` directory inside of your new `react-friends` project.
-  - Step 5: cd into `react-friends` and run `npm start` or `yarn start` and navigate to `localhost:3000`.
+* If you haven't already, please install `create-react-app`
+* [Link here](https://github.com/facebookincubator/create-react-app#getting-started)
 
-- App/PeopleList Set Up
-  - Step 1: inside of `App.js` create your constructor function, (don't forget to super()) and add a state object to it. Inside that state object define an array called People.
-  - Step 2: import people data in like so: `import { people } from './people.js` (if you haven't included people in your `src` directory this wont work);
-  _ Step 3: create a method called componentDidMount and set the people data on state.
-  - Step 4: create your `PeopleList` as a function component and import it in as: `import {PeopleList} from './PeopleList'`.
-  - Step 5: pass your `People` data down to PeopleList and render out the People List `<PeopleList people={this.state.People} />`.
-  - Step 6: for each person in `PeopleList` render out the first_name and last_name and email.
-  - Step 7: Go to town styling your components!
+## Initialize the progject.
 
-- Styling Components
-  - Step 1: create a file called PeopleList.css and go to town styling! Try and center each person on the screen. 
-  - Step 2: import PeopleList styles into PeopleList.js as `import './PeopleList.css'; to grant you access to the className references.
-    - Hint: Delete the styles in the app.css and index.css files and do it on your own! Make things look pretty!
+* Fork and clone this project and cd into it.
+* From within this directory run `create-react-app react-friends`.
+* Move the `people.js` file from this repo into the `src` directory inside of your new `react-friends` project.
+* cd into `react-friends` and run `npm start` or `yarn start` and navigate to `localhost:3000`.
 
-  ```
-  componentDidMount(){ 
+## App/PeopleList Set Up
+
+* Inside of `App.js` create your constructor function, (don't forget to super()) and add a state object to it. Inside that state object define an array called People.
+* Import people data in like so: `import { people } from './people.js` (if you haven't included people in your `src` directory this wont work);
+* Create a method called componentDidMount and set the people data on state.
+* Create your `PeopleList` as a function component and import it in as: `import {PeopleList} from './PeopleList'`.
+* Pass your `People` data down to PeopleList and render out the People List `<PeopleList people={this.state.People} />`.
+* For each person in `PeopleList` render out the first_name and last_name and email.
+* Go to town styling your components!
+
+# Styling Components
+
+* Create a file called PeopleList.css and go to town styling! Try and center each person on the screen.
+* Import PeopleList styles into PeopleList.js as `import './PeopleList.css'; to grant you access to the className references.
+  * Hint: Delete the styles in the app.css and index.css files and do it on your own! Make things look pretty!
+
+```
+  componentDidMount(){
    this.setState({People: people});
   }
-  ```
+```
 
+### Examples for use if/when you get a little stuck.
 
-### Examples
 #### Your App.JS component Should look similar to this:
+
 ```
 import React, { Component } from 'react';
 import './App.css';
@@ -68,14 +72,13 @@ class App extends Component {
     return (
       <div className="App">
         <h1>Hello React App</h1>
-        <PeopleList people={this.state.People} /> 
+        <PeopleList people={this.state.People} />
       </div>
     );
   }
 }
 
 export default App;
-
 ```
 
 #### Your PeopleList.JS component Should look similar to this:
@@ -94,7 +97,7 @@ export const PeopleList = (props) => {
               <h4>{person.first_name}</h4>
               <h4>{person.last_name}</h4>
               <div>{person.email}</div>
-            </div> 
+            </div>
           )
       }))}
     </div>
