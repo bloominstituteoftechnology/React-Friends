@@ -1,0 +1,21 @@
+.Person {
+    display: flex;
+    flex-wrap: wrap;
+    color: olivedrab;
+}
+
+.Person__block {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 250px;
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid greenyellow;
+}
+
+.Person__block:hover {
+    color: pink;
+    border: 1px solid plum;
+}
