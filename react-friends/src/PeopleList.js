@@ -6,9 +6,12 @@ const PeopleList = props => {
         <div>
         { props.people.map(person => {
             return(
-                <div>{person.first_name}</div>
-                
-            )
+                <div>
+                    <div>{person.first_name}</div>
+                    <div>{person.last_name}</div>
+                    <div>{person.email}</div>
+                </div>    
+            );
         }
         )}
         </div>
