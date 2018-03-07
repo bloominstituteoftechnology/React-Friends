@@ -1,0 +1,21 @@
+.PeopleList {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: .9rem;
+  }
+  
+  .PeopleList_person {
+    height: 200px;
+    width: 20%;
+    margin: 10px;
+    padding: 10px;
+    background-color: lightskyblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    color: white;
+
+
+  }
