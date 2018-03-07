@@ -1,0 +1,9 @@
+.People-Wrapper {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.Person {
+    text-align: center;
+}
