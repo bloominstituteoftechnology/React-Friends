@@ -1,20 +1,28 @@
 import React, { Component } from 'react';
-import { people } from './people';
 
 export const PeopleList = props => {
     const { name, people } = props;
     return (
       <div>
         <h2>A list of {name}</h2>
-        {props.people.map((people => {
+        {people.map((person => {
           return (
-            <div key={people.id}>
-              <p>First Name: {people.first_name}</p>
-              <p>Last Name: {people.last_name}</p>
-              <p>email: {people.email}</p>
-              <p>gender: {people.gender}</p>
-              <p>occupation: {people.occupation}</p>
-              <p>friends: {people.friends}</p>
+            <div key={person.id}>
+              <p>First Name: {person.first_name}</p>
+              <p>Last Name: {person.last_name}</p>
+              <p>email: {person.email}</p>
+              <p>gender: {person.gender}</p>
+              <p>occupation: {person.occupation}</p>
+              <div>friends: {person.friends.map((friend, i) => {
+                  console.log(friend)
+                  return (
+                      <div key={i}>
+                        <p>{friend.firstName}</p>
+                        <p>{friend.lastName}</p>
+                    </div>
+                  )
+              })}
+              </div>
             </div>
           )
         }))}
