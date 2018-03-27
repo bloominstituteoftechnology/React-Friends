@@ -21,6 +21,13 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+      <header className="App-header">
+          <img src={logo} className="App-logo" alt="logo" />
+          <h1 className="App-title">People List, Stalker mode engaged!</h1>
+        </header>
+        <p className="App-intro">
+          Give me everyones information even if they don't know me!
+        </p>
         <PeopleList people={this.state.People} />
       </div>
     );
