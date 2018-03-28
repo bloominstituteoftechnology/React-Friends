@@ -1,9 +1,22 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
-
+import { people } from './people.js';
 
 class App extends Component {
+  constructor() {
+    super();
+    this.state = {
+      people: []
+    }
+  }
+
+  componentDidMount() {
+    const { data } = people;
+    console.log(data);
+    this.setState({ people: data })
+  }
+
   render() {
     return (
       <div className="App">
