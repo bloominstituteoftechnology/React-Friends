@@ -1,15 +1,15 @@
-import React, { Component } from 'react';
-import { people } from './people.js';
+import React from 'react';
+import './PeopleList.css';
 
 export const PeopleList = (props) => {
     return (
         <div>
             {props.people.map((person, index) => {
                 return (
-                    <div key = {index}>
-                        <div>{ props.people.first_name }</div>
-                        <div>{ props.people.last_name }</div>
-                        <div>{ props.people.email }</div>
+                    <div key = {index} className = "container">
+                        <div className = "first">{ person.first_name }</div>
+                        <div className = "last">{ person.last_name }</div>
+                        <div className = "email">{ person.email }</div>
                     </div>
                 )
             })}

@@ -1,0 +1,20 @@
+div {
+    font-size: 1rem;
+}
+
+.first {
+    margin-top: 50px;
+}
+
+.email {
+    color: blue;
+    margin-bottom: 50px;
+}
+
+.container {
+    border: 1px solid black;
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+    background: lightcyan;
+}
