@@ -1,4 +1,4 @@
-# React-II-Guided Project
+# React-Friends
 
 * This mini project is designed to get you used to how components can be built around data that is a bit more complicated, and that doesn't just necessarily exist on a component's state. We're going to be using an external data source (although it'll be found locally in our project) from a file in our app called `people.js`. Your goal is to use `componentDidMount` to set that data on the state of the component you'll be building, and consuming it within a `render` function.
 
