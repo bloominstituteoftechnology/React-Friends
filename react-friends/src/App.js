@@ -2,19 +2,18 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import { people } from './people.js';
+import { PeopleList } from './PeopleList';
 
 class App extends Component {
   constructor() {
     super();
     this.state = {
-      people: []
+      People: []
     }
   }
 
   componentDidMount() {
-    const { data } = people;
-    console.log(data);
-    this.setState({ people: data })
+    this.setState({People: people});
   }
 
   render() {
@@ -27,6 +26,7 @@ class App extends Component {
         <p className="App-intro">
           To get started, edit <code>src/App.js</code> and save to reload.
         </p>
+        <PeopleList people={this.state.People} />
       </div>
     );
   }
