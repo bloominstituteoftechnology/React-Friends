@@ -1,4 +1,4 @@
-export const people = [
+export const People = [
     {
         "id": 1,
         "first_name": "Suzi",
