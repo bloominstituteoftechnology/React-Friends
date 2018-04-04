@@ -1,0 +1,17 @@
+.PeopleDiv {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.PeopleList {
+  margin: 15px;
+  padding: 15px;
+  background-color: gray;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 250px;
+  width: 250px;
+}
