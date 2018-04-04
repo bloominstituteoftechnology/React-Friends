@@ -1,0 +1,14 @@
+body {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    border: 3px dotted black;
+    padding: 15px;
+}
+
+.allPeople {
+    color: blue;
+    margin-bottom: 5px;
+}
+
+
