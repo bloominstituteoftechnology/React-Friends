@@ -19,7 +19,7 @@ class App extends Component {
     return (<div>
       <p>hello</p>
     <PeopleList people={this.state.people} />
-    </div>);
+    </div>)
   }
 }
 export default App;
