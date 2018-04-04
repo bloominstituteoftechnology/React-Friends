@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { render } from 'react-dom';
-import people from './people';
+import { people } from './people';
+import { PeopleList } from './PeopleList';
 
 class App extends Component {
   constructor() {
@@ -10,13 +11,13 @@ class App extends Component {
     };
   }
 
-  componentDidMount() {
-    this.setState{{ people: people }};
+  componentWillMount() {
+    this.setState({ people: people });
   }
 
   render() {
     return (
-      
+      <PeopleList people={this.state.people} />
     );
   }
 }
