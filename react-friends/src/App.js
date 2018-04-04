@@ -13,6 +13,10 @@ class App extends Component {
     }
   }
 
+  componentDidMount(){
+    this.setState({ people: people });
+   }
+
   render() {
     return (
       <div>
