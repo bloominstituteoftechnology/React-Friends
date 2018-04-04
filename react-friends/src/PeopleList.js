@@ -2,7 +2,9 @@ import React from 'react';
 
 const PeopleList = props => {
   return (
-    <div>hello</div>
+    <div>hello{props.people.map((person, index) => {
+      <div>Hello</div>;
+    })}</div>
   )
 }
 
