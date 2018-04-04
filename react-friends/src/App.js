@@ -3,17 +3,21 @@ import logo from './logo.svg';
 import './App.css';
 import { people } from './people.js';
 
-// import people array of objects from people.js
-// create componenDidMount(){}
-
 class App extends Component {
-  // create constructor with a state object{...}
   constructor() {
     super();
     this.state = {
       people: []
     };
   }
+
+  // App prototype methods
+  componentDidMount = () => {
+    this.setState({ "people": people });
+    console.log(people);
+    // console.log(this.state.people); this does not work?
+  }
+
 
   render() {
     return (
