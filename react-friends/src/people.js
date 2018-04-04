@@ -1,3 +1,5 @@
+import React, { Component } from 'react';
+
 export const people = [
     {
         "id": 1,
