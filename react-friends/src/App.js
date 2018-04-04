@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import { render } from 'react-dom';
-import { people } from './people';
-import { PeopleList } from './PeopleList';
+import logo from './App.css';
+import  { people }  from './people';
+import  { PeopleList }  from './PeopleList';
 
 class App extends Component {
   constructor() {
@@ -17,7 +17,15 @@ class App extends Component {
 
   render() {
     return (
-      <PeopleList people={this.state.people} />
+      <div className="App">
+        <header className="App-header">
+          <img src={logo} className="App-logo" alt="logo" />
+          <h1 className="App-title">Welcome to React</h1>
+        </header>
+        <div className="container">
+          <PeopleList people={this.state.people} />
+        </div>
+      </div>
     );
   }
 }
