@@ -17,12 +17,12 @@
 * If you haven't already, please install `create-react-app`
 * [Link here](https://github.com/facebookincubator/create-react-app#getting-started)
 
-## Initialize the progject.
+## Initialize the project.
 
 * Fork and clone this project and cd into it.
 * From within this directory run `create-react-app react-friends`.
 * Move the `people.js` file from this directory into the `src` directory inside of your new `react-friends` project.
-* cd into `react-friends` and run  `yarn start` or and navigate to `localhost:3000`.
+* cd into `react-friends` and run `yarn start` or and navigate to `localhost:3000`.
 
 ## `App.js` set up
 
@@ -43,10 +43,12 @@
 * For each person in `PeopleList` render out the first_name and last_name and email.
 
 ## Stretch Problem
+
 * Notice that each person object has a an array of friends assigned to it. The goal for the stretch problem will be to have a `FriendsList` drop down built out that hides the friends for each person until it is clicked on.
-* Once a user clicks on your FriendsList card, display that user's friends. 
+* Once a user clicks on your FriendsList card, display that user's friends.
 
 # Styling Components
+
 * There are many ways to style a React Application I recommend looking into `Reactstrap` [Link](https://reactstrap.github.io/) and `Styled-Components`[Link](https://www.styled-components.com/). Both are fantastic, but they're two different paradigms.
 
 * **Note** If you want to take the traditional `css` route that is perfectly fine too! There will be a demo provided in the future about `Reactstrap` and `Styled-Components`.
