@@ -1,0 +1,9 @@
+h2 {
+    color: red;
+    text-decoration: underline;
+}
+
+h3 {
+    color: tomato;
+    border: dotted green;
+}
