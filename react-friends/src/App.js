@@ -2,18 +2,18 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import { people } from './people.js';
-import { PeopleList } from './PeopleList.js';
+import PeopleList  from './PeopleList.js';
 
 class App extends Component {
   constructor () {
     super();
     this.state = {
-      People: [],
+      people: [],
     };
   }
 
   componentDidMount() {
-    this.setState( { People: people });
+    this.setState( { people: people });
   }
   render() {
     return (
@@ -25,6 +25,7 @@ class App extends Component {
         <p className="App-intro">
           To get started, edit <code>src/App.js</code> and save to reload.
         </p>
+        <PeopleList people = {this.state.people} />;
       </div>
     );
   }
