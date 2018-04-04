@@ -8,6 +8,6 @@ const Person = props => (
     <p>
       Name: {props.first_name} {props.last_name}
     </p>
-    <p>email: {props.email}</p>
+    <p>Email: {props.email}</p>
   </div>
 );
