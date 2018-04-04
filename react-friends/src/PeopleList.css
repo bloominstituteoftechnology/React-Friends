@@ -1,0 +1,9 @@
+h2 {
+  font-family: "Courier New", Courier, monospace;
+}
+.people-wrapper {
+  background: lightskyblue;
+  margin: 10px;
+  border-radius: 20px;
+  padding: 10px;
+}
