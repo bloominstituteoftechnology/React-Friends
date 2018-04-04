@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import { people }  from './people';
 import PeopleList from './components/PeopleList';
 import './App.css';
@@ -18,9 +17,7 @@ class App extends Component {
   }
   render() {
     return (
-      <div className="App">
-        {this.state.people.map(person => <div>{person.first_name + ' ' + person.last_name}</div>)}
-      </div>
+      <PeopleList people={this.state.people} />
     );
   }
 }

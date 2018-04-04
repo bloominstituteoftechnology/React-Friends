@@ -1,5 +1,7 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-const PeopleList = () => {
-  
+function PeopleList(props) {
+  return props.people.map((person, i) => <div key={i}>{person.first_name + ' ' + person.last_name}</div>)
 }
+
+export default PeopleList;
