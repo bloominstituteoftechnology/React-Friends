@@ -6,7 +6,7 @@ import PeopleList from './PeopleList.js';
 
 class App extends Component {
   componentWillMount() {
-    this.setState({ people: people }, () => console.log(this.state));
+    this.setState({ people });
   }
 
   render() {
