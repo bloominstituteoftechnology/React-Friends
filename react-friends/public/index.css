@@ -1,0 +1,16 @@
+body {
+  display: flex;
+  justify-content: center;
+}
+
+.Person {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid black;
+  width: 1000px;
+}
+
+.Person__attr {
+  width: 300px;
+  border: 1px silid black;
+}
