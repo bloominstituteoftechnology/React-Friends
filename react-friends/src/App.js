@@ -12,6 +12,14 @@ class App extends Component {
       people: [],
     }
   }
+
+  render() {
+    return (
+      <div>
+        <PeopleList people={this.state.people}/>
+      </div>
+    );
+  }
 }
 
 export default App;
