@@ -1,9 +1,9 @@
 import React from 'react';
 
-const PeopleList = () => {
+const PeopleList = props => {
   return (
-
+    <div><p>hello</p></div>
   )
 }
 
-export default PeopleList
+export default PeopleList;
