@@ -1,0 +1,32 @@
+.PeopleWrapper {
+	display: flex;
+	flex-flow: row wrap;
+	align-items: flex-start;
+	justify-content: center;
+	margin-left: 100px;
+	margin-right: 100px;
+}
+
+.Person {
+	width: 300px;
+}
+
+.Person__name {
+	text-decoration: underline;
+	margin-bottom: 0;
+}
+
+.Person__occupation {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.PersonEmail {
+	margin-top: 0;
+	color: blue;
+}
+
+.Friends__title {
+	margin-bottom: 0;
+	text-decoration: underline;
+}
