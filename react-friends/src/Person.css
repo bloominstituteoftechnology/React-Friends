@@ -1,0 +1,13 @@
+.Person-Wrapper {
+  height: 100px;
+  width: 200px;
+}
+
+.Name-Header {
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.Email-Title {
+  font-size: 13px;
+}
