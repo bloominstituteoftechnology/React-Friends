@@ -1,0 +1,32 @@
+Arguments: 
+  B:\Program Files\nodejs\node.exe C:\Users\aaron\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js start
+
+PATH: 
+  C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;B:\Program Files\nodejs\;C:\Users\aaron\AppData\Local\Microsoft\WindowsApps;B:\Program Files\Microsoft VS Code\bin;C:\Users\aaron\AppData\Roaming\npm
+
+Yarn version: 
+  1.5.1
+
+Node version: 
+  8.10.0
+
+Platform: 
+  win32 x64
+
+npm manifest: 
+  No manifest
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
+
+Trace: 
+  Error: Couldn't find a package.json file in "D:\\LambdaSchool\\CS9\\React\\React-Friends"
+      at new MessageError (C:\Users\aaron\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:186:110)
+      at C:\Users\aaron\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:40048:15
+      at Generator.next (<anonymous>)
+      at step (C:\Users\aaron\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:98:30)
+      at C:\Users\aaron\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:109:13
+      at <anonymous>
