@@ -47,7 +47,7 @@
 * Once a user clicks on your FriendsList card, display that user's friends. 
 
 # Styling Components
-* There are many ways to style a React Application I recomend looking into `ReactStratp` [Link](https://reactstrap.github.io/) and `Styled-Components`[Link](https://www.styled-components.com/). Both are fantastic, but they're two different paradigms.
+* There are many ways to style a React Application I recommend looking into `Reactstrap` [Link](https://reactstrap.github.io/) and `Styled-Components`[Link](https://www.styled-components.com/). Both are fantastic, but they're two different paradigms.
 
 * **Note** If you want to take the traditional `css` route that is perfectly fine too! There will be a demo provided in the future about `Reactstrap` and `Styled-Components`.
 * Create a file called PeopleList.css and go to town styling! Try and center each person on the screen.
