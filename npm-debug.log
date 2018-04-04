@@ -1,0 +1,157 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   'create-react-app',
+1 verbose cli   'react-friends' ]
+2 info using npm@3.10.10
+3 info using node@v6.11.3
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly fetchPackageMetaData create-react-app
+8 silly fetchPackageMetaData react-friends
+9 silly fetchNamedPackageData create-react-app
+10 silly mapToRegistry name create-react-app
+11 silly mapToRegistry using default registry
+12 silly mapToRegistry registry https://registry.npmjs.org/
+13 silly mapToRegistry data Result {
+13 silly mapToRegistry   raw: 'create-react-app',
+13 silly mapToRegistry   scope: null,
+13 silly mapToRegistry   escapedName: 'create-react-app',
+13 silly mapToRegistry   name: 'create-react-app',
+13 silly mapToRegistry   rawSpec: '',
+13 silly mapToRegistry   spec: 'latest',
+13 silly mapToRegistry   type: 'tag' }
+14 silly mapToRegistry uri https://registry.npmjs.org/create-react-app
+15 silly fetchNamedPackageData react-friends
+16 silly mapToRegistry name react-friends
+17 silly mapToRegistry using default registry
+18 silly mapToRegistry registry https://registry.npmjs.org/
+19 silly mapToRegistry data Result {
+19 silly mapToRegistry   raw: 'react-friends',
+19 silly mapToRegistry   scope: null,
+19 silly mapToRegistry   escapedName: 'react-friends',
+19 silly mapToRegistry   name: 'react-friends',
+19 silly mapToRegistry   rawSpec: '',
+19 silly mapToRegistry   spec: 'latest',
+19 silly mapToRegistry   type: 'tag' }
+20 silly mapToRegistry uri https://registry.npmjs.org/react-friends
+21 verbose request uri https://registry.npmjs.org/react-friends
+22 verbose request no auth needed
+23 info attempt registry request try #1 at 10:14:35 AM
+24 verbose request id 676573af38e8a6cb
+25 http request GET https://registry.npmjs.org/react-friends
+26 verbose request uri https://registry.npmjs.org/create-react-app
+27 verbose request no auth needed
+28 info attempt registry request try #1 at 10:14:35 AM
+29 verbose etag W/"59ecf072-d22d"
+30 verbose lastModified Sun, 22 Oct 2017 19:24:34 GMT
+31 http request GET https://registry.npmjs.org/create-react-app
+32 http 304 https://registry.npmjs.org/create-react-app
+33 verbose headers { date: 'Wed, 25 Oct 2017 17:14:38 GMT',
+33 verbose headers   via: '1.1 varnish',
+33 verbose headers   'cache-control': 'max-age=300',
+33 verbose headers   etag: 'W/"59ecf072-d22d"',
+33 verbose headers   age: '0',
+33 verbose headers   connection: 'keep-alive',
+33 verbose headers   'x-served-by': 'cache-bur17532-BUR',
+33 verbose headers   'x-cache': 'HIT',
+33 verbose headers   'x-cache-hits': '1',
+33 verbose headers   'x-timer': 'S1508951678.095197,VS0,VE30',
+33 verbose headers   vary: 'Accept-Encoding, Accept' }
+34 silly get cb [ 304,
+34 silly get   { date: 'Wed, 25 Oct 2017 17:14:38 GMT',
+34 silly get     via: '1.1 varnish',
+34 silly get     'cache-control': 'max-age=300',
+34 silly get     etag: 'W/"59ecf072-d22d"',
+34 silly get     age: '0',
+34 silly get     connection: 'keep-alive',
+34 silly get     'x-served-by': 'cache-bur17532-BUR',
+34 silly get     'x-cache': 'HIT',
+34 silly get     'x-cache-hits': '1',
+34 silly get     'x-timer': 'S1508951678.095197,VS0,VE30',
+34 silly get     vary: 'Accept-Encoding, Accept' } ]
+35 verbose etag https://registry.npmjs.org/create-react-app from cache
+36 verbose get saving create-react-app to C:\Users\Kia Choi\AppData\Roaming\npm-cache\registry.npmjs.org\create-react-app\.cache.json
+37 verbose correctMkdir C:\Users\Kia Choi\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+38 http 404 https://registry.npmjs.org/react-friends
+39 verbose headers { 'content-type': 'application/json',
+39 verbose headers   'cache-control': 'max-age=0',
+39 verbose headers   'content-length': '2',
+39 verbose headers   'accept-ranges': 'bytes',
+39 verbose headers   date: 'Wed, 25 Oct 2017 17:14:38 GMT',
+39 verbose headers   via: '1.1 varnish',
+39 verbose headers   age: '0',
+39 verbose headers   connection: 'keep-alive',
+39 verbose headers   'x-served-by': 'cache-bur17523-BUR',
+39 verbose headers   'x-cache': 'MISS',
+39 verbose headers   'x-cache-hits': '0',
+39 verbose headers   'x-timer': 'S1508951678.101314,VS0,VE384',
+39 verbose headers   vary: 'Accept-Encoding' }
+40 silly get cb [ 404,
+40 silly get   { 'content-type': 'application/json',
+40 silly get     'cache-control': 'max-age=0',
+40 silly get     'content-length': '2',
+40 silly get     'accept-ranges': 'bytes',
+40 silly get     date: 'Wed, 25 Oct 2017 17:14:38 GMT',
+40 silly get     via: '1.1 varnish',
+40 silly get     age: '0',
+40 silly get     connection: 'keep-alive',
+40 silly get     'x-served-by': 'cache-bur17523-BUR',
+40 silly get     'x-cache': 'MISS',
+40 silly get     'x-cache-hits': '0',
+40 silly get     'x-timer': 'S1508951678.101314,VS0,VE384',
+40 silly get     vary: 'Accept-Encoding' } ]
+41 silly fetchPackageMetaData Error: Registry returned 404 for GET on https://registry.npmjs.org/react-friends
+41 silly fetchPackageMetaData     at makeError (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:302:12)
+41 silly fetchPackageMetaData     at CachingRegistryClient.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:280:14)
+41 silly fetchPackageMetaData     at Request._callback (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:210:14)
+41 silly fetchPackageMetaData     at Request.self.callback (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:187:22)
+41 silly fetchPackageMetaData     at emitTwo (events.js:106:13)
+41 silly fetchPackageMetaData     at Request.emit (events.js:191:7)
+41 silly fetchPackageMetaData     at Request.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:1048:10)
+41 silly fetchPackageMetaData     at emitOne (events.js:96:13)
+41 silly fetchPackageMetaData     at Request.emit (events.js:188:7)
+41 silly fetchPackageMetaData     at IncomingMessage.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:969:12)
+41 silly fetchPackageMetaData  error for react-friends { Error: Registry returned 404 for GET on https://registry.npmjs.org/react-friends
+41 silly fetchPackageMetaData     at makeError (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:302:12)
+41 silly fetchPackageMetaData     at CachingRegistryClient.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:280:14)
+41 silly fetchPackageMetaData     at Request._callback (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:210:14)
+41 silly fetchPackageMetaData     at Request.self.callback (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:187:22)
+41 silly fetchPackageMetaData     at emitTwo (events.js:106:13)
+41 silly fetchPackageMetaData     at Request.emit (events.js:191:7)
+41 silly fetchPackageMetaData     at Request.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:1048:10)
+41 silly fetchPackageMetaData     at emitOne (events.js:96:13)
+41 silly fetchPackageMetaData     at Request.emit (events.js:188:7)
+41 silly fetchPackageMetaData     at IncomingMessage.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:969:12) pkgid: 'react-friends', statusCode: 404, code: 'E404' }
+42 silly rollbackFailedOptional Starting
+43 silly rollbackFailedOptional Finishing
+44 silly runTopLevelLifecycles Finishing
+45 silly install printInstalled
+46 verbose stack Error: Registry returned 404 for GET on https://registry.npmjs.org/react-friends
+46 verbose stack     at makeError (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:302:12)
+46 verbose stack     at CachingRegistryClient.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:280:14)
+46 verbose stack     at Request._callback (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:210:14)
+46 verbose stack     at Request.self.callback (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:187:22)
+46 verbose stack     at emitTwo (events.js:106:13)
+46 verbose stack     at Request.emit (events.js:191:7)
+46 verbose stack     at Request.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:1048:10)
+46 verbose stack     at emitOne (events.js:96:13)
+46 verbose stack     at Request.emit (events.js:188:7)
+46 verbose stack     at IncomingMessage.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:969:12)
+47 verbose statusCode 404
+48 verbose pkgid react-friends
+49 verbose cwd C:\Users\Kia Choi\Desktop\Personal\Lambda School Projects\React-II-Mini-Sprint
+50 error Windows_NT 10.0.15063
+51 error argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "create-react-app" "react-friends"
+52 error node v6.11.3
+53 error npm  v3.10.10
+54 error code E404
+55 error 404 Registry returned 404 for GET on https://registry.npmjs.org/react-friends
+56 error 404
+57 error 404 'react-friends' is not in the npm registry.
+58 error 404 You should bug the author to publish it (or use the name yourself!)
+59 error 404 Note that you can also install from a
+60 error 404 tarball, folder, http url, or git url.
+61 verbose exit [ 1, true ]
