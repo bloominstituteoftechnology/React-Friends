@@ -1,0 +1,8 @@
+.people {
+    display: flex;
+    flex-direction: column;
+}
+
+.people-person {
+    padding: 20px;
+}
