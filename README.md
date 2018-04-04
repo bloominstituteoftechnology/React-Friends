@@ -21,86 +21,35 @@
 
 * Fork and clone this project and cd into it.
 * From within this directory run `create-react-app react-friends`.
-* Move the `people.js` file from this repo into the `src` directory inside of your new `react-friends` project.
-* cd into `react-friends` and run `npm start` or `yarn start` and navigate to `localhost:3000`.
+* Move the `people.js` file from this directory into the `src` directory inside of your new `react-friends` project.
+* cd into `react-friends` and run  `yarn start` or and navigate to `localhost:3000`.
 
-## App/PeopleList Set Up
+## `App.js` set up
 
-* Inside of `App.js` create your constructor function, (don't forget to super()) and add a state object to it. Inside that state object define an array called People.
+* Inside of `App.js` create your constructor function, (don't forget to super() **Remember The CCR Steps**) and add a state object to it. Inside that state object define an array called People.
 * Import people data in like so: `import { people } from './people.js` (if you haven't included people in your `src` directory this wont work);
 * Create a method called componentDidMount and set the people data on state.
-* Create your `PeopleList` as a function component and import it in as: `import {PeopleList} from './PeopleList'`.
-* Pass your `People` data down to PeopleList and render out the People List `<PeopleList people={this.state.People} />`.
-* For each person in `PeopleList` render out the first_name and last_name and email.
-* Go to town styling your components!
-
-# Styling Components
-
-* Create a file called PeopleList.css and go to town styling! Try and center each person on the screen.
-* Import PeopleList styles into PeopleList.js as `import './PeopleList.css'; to grant you access to the className references.
-  * Hint: Delete the styles in the app.css and index.css files and do it on your own! Make things look pretty!
 
 ```
   componentDidMount(){
-   this.setState({People: people});
+   this.setState({ people: people });
   }
 ```
 
-### Examples for use if/when you get a little stuck.
+## `PeopleList.js` set up
 
-#### Your App.JS component Should look similar to this:
+* Create your `PeopleList` as a function component and got back to `App.js` and import it in as: `import { PeopleList } from './PeopleList'`.
+* Pass your `People` data down to PeopleList and render out the People List `<PeopleList people={this.state.people} />`.
+* For each person in `PeopleList` render out the first_name and last_name and email.
 
-```
-import React, { Component } from 'react';
-import './App.css';
-import { people } from './people';
-import { PeopleList } from './PeopleList';
+## Stretch Problem
+* Notice that each person object has a an array of friends assigned to it. The goal for the stretch problem will be to have a `FriendsList` drop down built out that hides the friends for each person until it is clicked on.
+* Once a user clicks on your FriendsList card, display that user's friends. 
 
-class App extends Component {
-  constructor() {
-    super();
-    this.state = {
-      People: [],
-    };
-  }
+# Styling Components
+* There are many ways to style a React Application I recomend looking into `ReactStratp` [Link](https://reactstrap.github.io/) and `Styled-Components`[Link](https://www.styled-components.com/). Both are fantastic, but they're two different paradigms.
 
-  componentDidMount() {
-    this.setState({People: people});
-  }
-
-  render() {
-    return (
-      <div className="App">
-        <h1>Hello React App</h1>
-        <PeopleList people={this.state.People} />
-      </div>
-    );
-  }
-}
-
-export default App;
-```
-
-#### Your PeopleList.JS component Should look similar to this:
-
-```
-import React from 'react';
-import Person from './Person';
-import './PeopleList.css';
-
-export const PeopleList = (props) => {
-  return (
-    <div className="People-Wrapper">
-      {props.people.map((person => {
-        return (
-            <div>
-              <h4>{person.first_name}</h4>
-              <h4>{person.last_name}</h4>
-              <div>{person.email}</div>
-            </div>
-          )
-      }))}
-    </div>
-  )
-};
-```
+* **Note** If you want to take the traditional `css` route that is perfectly fine too! There will be a demo provided in the future about `Reactstrap` and `Styled-Components`.
+* Create a file called PeopleList.css and go to town styling! Try and center each person on the screen.
+* Import PeopleList styles into PeopleList.js as `import './PeopleList.css'; to grant you access to the className references.
+  * Hint: Delete the styles in the app.css and index.css files and do it on your own! Make things look pretty!
