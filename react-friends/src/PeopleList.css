@@ -1,0 +1,31 @@
+.Person {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    margin: 15px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.Person__Name {
+    text-align: right;
+}
+
+.Person__Email {
+    text-align: left;
+}
+
+.Person__Button {
+    width: 150px;
+    margin: 15px 0;
+}
+
+.Person__Friends {
+    width: 200px;
+    font-size: 16px;
+    padding: 10px 0 10px 20px;
+    border: 1px solid;
+}
+
+.Person__Friends--Hide {
+    display: none;
+}
