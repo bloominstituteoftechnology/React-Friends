@@ -6,4 +6,4 @@ const PeopleList = props => {
   return <div>{props.peopleProp.map(c => <div>{c.people}</div>)}</div>;
 };
 
-export default peoplelist;
+export default PeopleList;
