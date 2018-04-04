@@ -1,0 +1,19 @@
+.PeopleList {
+    display: inline-block;;
+}
+
+.PeopleList__person {
+    margin-top: 20px;
+    color: black;
+    font-family: "Calibri";
+    font-size: 1rem;
+}
+    
+.PeopleList__email {
+    color: Blue;
+    text-decoration: underline;
+}
+    
+ul {
+    list-style-type: none;
+}
