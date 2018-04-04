@@ -1,0 +1,16 @@
+.People {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 600px;
+}
+
+.People h2 {
+    text-align: center;
+}
+
+.People__Person {
+    border: 1px solid gray;
+    margin: 1rem;
+}
