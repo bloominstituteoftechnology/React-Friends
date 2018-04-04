@@ -1,0 +1,9 @@
+.people-wrapper {
+    color: red;
+    border: 1px solid gray;
+    text-decoration: underline;
+}
+
+.person-wrapper {
+    border: 2px solid black;
+}
