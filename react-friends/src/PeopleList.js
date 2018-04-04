@@ -1,6 +1,11 @@
 import React from 'react';
 
 export const PeopleList = props => {
-  return ( <div>{props.peopleProp.map(p => <div>{p.first_name}{p.last_name}{p.email}</div>)}</div>);
-};
+    return ( <div>
+    {props.people.map( peoples => {
+        return <div> {peoples.first_name}, {peoples.last_name}, {peoples.email} </div>
+    })}
+    </div>
+    )
+}
 
