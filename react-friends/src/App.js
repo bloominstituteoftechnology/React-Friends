@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
+import { render } from 'react-dom';
 import logo from './logo.svg';
 import './App.css';
 import { people } from './people.js';
+import PeopleList from './PeopleList.js';
 
 class App extends Component {
   constructor() {
@@ -14,7 +16,8 @@ class App extends Component {
   // App prototype methods
   componentDidMount = () => {
     this.setState({ "people": people });
-    console.log(people);
+    // console.log(people);
+    // console.log(this.state);
     // console.log(this.state.people); this does not work?
   }
 
@@ -29,9 +32,11 @@ class App extends Component {
         <p className="App-intro">
           To get started, edit <code>src/App.js</code> and save to reload.
         </p>
+        <PeopleList people={this.state.people} />
       </div>
     );
   }
 }
 
 export default App;
+render(<App />, document.getElementById('root'));
