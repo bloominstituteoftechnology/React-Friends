@@ -1,8 +1,13 @@
 import React from "react";
 
-const PeopleList = props => {
-  // map over peopleProp return a dom elment for each name in list
-  return <div>{props.peopleProp.map(c => <div>{c.names}</div>)}</div>;
-};
+const PeopleList = props => props.people.map(peep => <Person {...peep} />);
+export { PeopleList };
 
-export default PeopleList;
+const Person = props => (
+  <div>
+    <p>
+      Name: {props.first_name} {props.last_name}
+    </p>
+    <p>email: {props.email}</p>
+  </div>
+);
