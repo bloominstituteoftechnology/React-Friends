@@ -1,9 +1,14 @@
-import { people } from "./people";
+import React from "react"
+// import { people } from "./people";
 
-PeopleList = props => {
-        return(
-        <PeopleList people={this.state.people} />
-        )
+const PeopleList = (props) => {
+    return (
+        <div>
+          {props.people.map(person => (
+            <div>{person.first_name} {person.last_name} </div>
+          ))}
+        </div>
+      );
 }
 
-export default {PeopleList}
+export default PeopleList
