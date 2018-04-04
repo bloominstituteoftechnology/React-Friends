@@ -1,0 +1,45 @@
+.App {
+  text-align: center;
+  background-color: azure;
+}
+ul {
+  display: flex;
+  flex-wrap: wrap
+}
+li {
+  background-color: whitesmoke;
+  list-style: none;
+  height: 13em;
+  width: 15em;
+  margin: auto;
+  text-align: center;
+  border: 2px outset blanchedalmond;
+  border-radius: 5px;
+  margin: 10px auto;
+}
+li:hover {
+  opacity: .8;
+  text-shadow: 2px 2px blanchedalmond;
+  border: 2px inset blanchedalmond;
+
+}
+.name {
+  font-size: 1.2em;
+  font-weight: 600;
+}
+.full-name {
+  height: 100%;
+  width: 100%;
+  margin: auto;
+  padding: 3.8em 0;
+}
+.full-name:hover {
+  cursor: pointer;
+}
+.shown {
+  padding-top: 1em;
+  font-style: italic;
+}
+.hidden {
+  display: none;
+}
