@@ -55,3 +55,5 @@
 * Create a file called PeopleList.css and go to town styling! Try and center each person on the screen.
 * Import PeopleList styles into PeopleList.js as `import './PeopleList.css'; to grant you access to the className references.
   * Hint: Delete the styles in the app.css and index.css files and do it on your own! Make things look pretty!
+
+  initial commit 
