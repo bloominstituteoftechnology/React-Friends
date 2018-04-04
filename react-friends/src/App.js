@@ -5,9 +5,14 @@ import { people } from './people.js';
 
 class App extends Component {
   constructor () {
-    super() = {
+    super();
+    this.state = {
       People: [],
     };
+  }
+
+  componentDidMount() {
+    this.setState( { People: people });
   }
   render() {
     return (
