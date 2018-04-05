@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import './App.css';
 import { people } from './people.js';
 import { PeopleList } from './PeopleList'
-// import { Table } from './Table'     //experimenting to display all info in sortable table
+import { Table } from './Table'     //experimenting to display all info in sortable table
 class App extends Component {
   constructor() {
     super();
@@ -18,9 +18,6 @@ class App extends Component {
 
   render() {
     return (
-      // <p className="App-intro">
-      //   This has been edited <code>src/App.js</code>
-      // </p>
       <div className="App">
         <header className="App-header">
           <h1 className="App-title">PeopleList</h1>
