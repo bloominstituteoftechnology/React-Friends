@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import './App.css';
 import { people } from './people.js';
 import { PeopleList } from './PeopleList'
-
+// import { Table } from './Table'     //experimenting to display all info in sortable table
 class App extends Component {
   constructor() {
     super();
