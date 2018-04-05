@@ -1,5 +1,3 @@
-
-const initialCommit = "";
 export const people = [
     {
         "id": 1,
