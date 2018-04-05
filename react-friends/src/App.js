@@ -3,21 +3,27 @@ import logo from './logo.svg';
 import './App.css';
 import PeopleList from "./PeopleList";
 import {people} from './people.js' ;
-
+// console.log(people)
 class App extends Component {
   constructor(){
     super();
     this.state = {
-      People: []
+      people: []
     };
 
   }
 
-  componentWillMount() {
+  // componentWillMount() {// getting deprecated.
+  //   this.setState({ people });
+  // }
+  componentDidMount(){ // lifecycle method defacto.
+    console.log('CDM called')
     this.setState({ people });
   }
+  //every change in setState will call render.
 
   render() {
+    console.log('Render called')
     return (
       <div className="App">
         <header className="App-header">
