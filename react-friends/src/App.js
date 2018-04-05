@@ -12,7 +12,7 @@ class App extends Component {
     };
   }
 
-  componentWillMount() {
+  componentWillMount() { //WILLmount is going away & standard will be to use componentDidMount()
     this.setState({ people: people });
   }
 

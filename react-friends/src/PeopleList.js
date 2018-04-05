@@ -11,3 +11,20 @@ export const PeopleList = props => {
         </div>
     )
 }
+
+//Instructor Solution Code: 
+
+//const PeopleList = props => {
+  //return {
+    //<div>
+    //{props.people.map(person => (
+      //<div key={person.id}>
+      //<div>{`${person.first_name} ${person.last_name}`}</div>
+      //<p>{person.email}</p>
+      //<FriendsList friends={person.friends} />
+      //</div>
+ // ))}
+ // </div>
+//  };
+//};
+// export default PeopleList;
