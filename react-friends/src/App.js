@@ -13,12 +13,12 @@ class App extends Component {
 
   }
 
-  // componentWillMount() {// getting deprecated.
+  // componentWillMount() {// getting deprecated.fires befor render.
   //   this.setState({ people });
   // }
   componentDidMount(){ // lifecycle method defacto.
     console.log('CDM called')
-    this.setState({ people });
+    this.setState({ people });// everything on state is mutable.
   }
   //every change in setState will call render.
 
