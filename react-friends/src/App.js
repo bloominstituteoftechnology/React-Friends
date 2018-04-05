@@ -1,35 +1,32 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import people from './people.js';
 import PeopleList from './PeopleList';
-import { people } from './people.js';
+//yarn add bootstrap reactstrap // to do css stuff
 
 class App extends Component {
-  constructor(){
+  constructor() {
     super();
     this.state = {
-      people: [],
+      people: []
     }
   }
 
   componentDidMount = () => {
-    this.setState({ people: people });
+    console.log('CDM called');
+    this.setState({ people });
   }
 
   render() {
+    console.log('RENDER called');
     return (
       <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
+          <h1 className="App-title">My Custom App 4 Ppl</h1>
         </header>
-        <PeopleList 
-        //people={this.state.people} 
-        {...this.state}
-        />
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+        <PeopleList {...this.state} />
       </div>
     );
   }
