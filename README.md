@@ -38,7 +38,7 @@
 
 ## `PeopleList.js` set up
 
-* Create your `PeopleList` as a function component and got back to `App.js` and import it in as: `import { PeopleList } from './PeopleList'`.
+* Create your `PeopleList` as a function component and go back to `App.js` and import it in as: `import { PeopleList } from './PeopleList'`.
 * Pass your `People` data down to PeopleList and render out the People List `<PeopleList people={this.state.people} />`.
 * For each person in `PeopleList` render out the first_name and last_name and email.
 
