@@ -1,6 +1,7 @@
 .People-list {
-  text-align: center;
+  justify-content: center;
   margin-top: 1%;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1em;
+  border: 1px solid #000;
 }
