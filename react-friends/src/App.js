@@ -13,7 +13,7 @@ class App extends Component {
     };
   }
 
-  componentWillMount () {
+  componentDidMount () {
     this.setState ({ People: people });
   }
 
