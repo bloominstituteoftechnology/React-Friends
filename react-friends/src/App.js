@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import { people } from './people.js';
-// import { PeopleList } from './PeopleList';
+import  PeopleList  from './PeopleList';
 
 class App extends Component {
   constructor() {
@@ -23,7 +23,7 @@ class App extends Component {
           <img src={logo} className="App-logo" alt="logo" />
           <h1 className="App-title">{/*this.state.peoples*/}i get this error everywhere</h1>
         </header>
-        {/* <PeopleList pep={this.state.peoples.first_name} /> */}
+         <PeopleList pep={this.state.peoples} /> 
       </div>
     );
   }
