@@ -1,3 +1,4 @@
+//Working with Lonnie Davis on 5/2/18
 export const people = [
     {
         "id": 1,
