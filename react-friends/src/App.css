@@ -19,3 +19,13 @@
 .List-email {
   color: gray;
 }
+
+.Friend-entry {
+  margin:15px 0;
+  background: #efffff;
+  border: 1px solid lightgray;
+}
+
+.Friend-entry-hidden {
+  display: none;
+}
