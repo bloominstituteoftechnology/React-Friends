@@ -18,7 +18,7 @@ class App extends Component {
 
   render() {
     return (
-      <div>
+      <div className="container">
         <PeopleList myPeople={this.state.friends}/>
       </div>
     );

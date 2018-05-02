@@ -1,6 +1,21 @@
+.container {
+  display:flex;
+  width: 800px;
+  margin: auto;
+  justify-content: center;
+}
 
 
+.List-entry {
+  margin: 10px 0;
+  background: #e3ffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction:column;
+  border: 1px solid gray;
+}
 
-.List-person {
-  padding: 10px 0;
+.List-email {
+  color: gray;
 }
