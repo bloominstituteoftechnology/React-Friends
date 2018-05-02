@@ -29,6 +29,7 @@ class App extends Component {
         <p className="App-intro">
           Friends and their emails
         </p>
+          <button>i dont work</button>
         <PeopleList
         friends={this.state.friends}
         />
