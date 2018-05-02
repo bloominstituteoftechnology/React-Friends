@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
+import Dropdown from './Dropdown';
 import PeopleList from './PeopleList';
 import logo from './logo.svg';
 import './App.css';
-import { people } from "./people";
+import { people } from './people';
+
 
 
 class App extends Component {
@@ -23,6 +25,7 @@ class App extends Component {
       <div className="App">
         <header className="App-header">
           <h1 className="App-title">Welcome to Friends</h1>
+          <Dropdown />
         </header>
         <PeopleList
           friends={this.state.friends}
