@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import FriendsList from "./friendslist.js";
+import { people } from './people.js';
 
 class App extends Component {
 
