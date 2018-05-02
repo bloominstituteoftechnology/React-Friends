@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import FriendsList from "./friendslist.js";
+import PeopleList from "./peoplelist.js";
 import { people } from './people.js';
 
 class App extends Component {
@@ -19,7 +19,7 @@ class App extends Component {
   render() {
     return (
       <div>
-        <FriendsList myPeople={this.state.friends}/>
+        <PeopleList myPeople={this.state.friends}/>
       </div>
     );
   }
