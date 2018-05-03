@@ -13,11 +13,12 @@ const PeopleList = props => {
                                 {friend.first_name} {friend.last_name} </CardTitle>
                                 <CardText>{friend.email}</CardText>
                                  </CardBody>
-                                        <select className="mein-problem_children" caret>                            
+                                        <select className="mein-problem_children" caret>    
+                                        <option> Friends </option>                         
                                         {friend.friends.map(friendofPerson => {
                                             return (
                                         <option key={"".concat(friendofPerson.firstName, friendofPerson.lastName)} className="mein-problem-child">
-                                        {friendofPerson.firstName}{friendofPerson.lastName}
+                                         {friendofPerson.firstName}{friendofPerson.lastName}
                                         </option>
                                             )})}
                                         </select>
