@@ -11,19 +11,20 @@ class App extends Component {
     super();
     this.state = {
       friends: [],
-      showMenu: false
+      showFriends: false,
     };
+  }  
+  showFriendsFunction() {
+    const { showFriends } = this.state.showFriends;
+    this.setState({
+      showFriends: !showFriends
+    })
   }
   componentDidMount() {
     this.setState( { friends: people } )
   }
-  showMenu(event) {
-    event.preventDefault();
-      this.setState(
-        {showMenu: true,
-  });
-}
-this.
+
+
   render () {
     return (
         <div className="App">
@@ -32,7 +33,8 @@ this.
           </header>
           <PeopleList 
           friends={this.state.friends}
-          showMenu={this.state.showMenu} />
+          onClick={() => this.showFriendsFunction()}
+          showFriends={this.state.showFriends} />
       </div>
     )
   }

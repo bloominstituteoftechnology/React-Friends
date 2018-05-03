@@ -26,3 +26,9 @@
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+.mein-problem-child .dropdown-menu .show {
+  display: none;
+}
+.mein-problem-child .dropdown-menu {
+  display: block;
+}
