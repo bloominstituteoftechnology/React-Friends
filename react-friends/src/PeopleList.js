@@ -1,5 +1,5 @@
 import React from "react";
-// import FriendsOfUser from "./FriendsOfUser";
+import FriendsOfUser from "./FriendsOfUser";
 
 const PeopleList = props => {
 //   console.log("PROPS: ", props);
@@ -9,7 +9,7 @@ const PeopleList = props => {
                     return <li key={i} >
                                 {`Name: ${user.first_name}, Last Name`}
                                 {/* {display === true ? <div>Display True</div> : null} */}
-                                {/* <FriendsOfUser friends={user.friends} /> */}
+                                <FriendsOfUser friends={user.friends} />
                             </li>
                 })}
             </ol>
