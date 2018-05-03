@@ -8,7 +8,7 @@
 }
 
 .App-header {
-  background-color: #222;
+  background-color: black;
   height: 100px;
   padding: 20px;
   color: white;
@@ -29,6 +29,11 @@
   margin: 10px 20px;
   font-size: 20px;
   color: black;
+}
+
+.toggle {
+  margin: 10px;
+  font-size: 30px;
 }
 
 
