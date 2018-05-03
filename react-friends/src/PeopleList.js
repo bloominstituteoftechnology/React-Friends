@@ -1,16 +1,25 @@
 import React from "react";
-import PropTypes from "prop-types";
+// import PropTypes from "prop-types";
 
-const PeopleList = props => {
-    console.log("Props", props);
-    return 
-    <div>
-    {props.People.map(people => {
-        return (<div key = {people.first_name + people.last_name + people.email}>
-            {people.first_name + people.last_name + people.email}
-        </div>)
-    } )}
-    </div>
+class PeopleList extends React.Component {
+    constructor(props){
+        super(props);
+        console.log("Props", props);
+}
+    render () {
+        console.log(this.props);
+        return (
+            <div>
+            {this.props.people.map(person => { return (
+                <div key = {person.first_name + person.last_name + person.email}>
+                    {person.first_name + " " + person.last_name + "   " + "|"  + "   " + person.email}
+                </div>
+             ) } )}
+            </div>);
+    }    
+ 
+    
+    
 }
 
 export default PeopleList;
