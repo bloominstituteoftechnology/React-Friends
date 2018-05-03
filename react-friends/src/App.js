@@ -8,13 +8,13 @@ class App extends Component {
   constructor() {
     super();
       this.state = {
-        people: [...people]
+        people: []
       };
   }
-  // componentDidMount() {
-  //   console.log(people);
-  //   this.setState({ people: people});
-  // }
+  componentDidMount() {
+    console.log(people);
+    this.setState({ people: [...people]});
+  }
 
 
   render() {
