@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card, CardBody, CardTitle, CardText, UncontrolledDropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap';
+import { Card, CardBody, CardTitle, CardText } from 'reactstrap';
 
 const PeopleList = props => {
         return (
@@ -13,23 +13,19 @@ const PeopleList = props => {
                                 {friend.first_name} {friend.last_name} </CardTitle>
                                 <CardText>{friend.email}</CardText>
                                  </CardBody>
-                                
-                                <UncontrolledDropdown className="mein-problem-children">  
-                                        <DropdownToggle caret>
-                                            Friends
-                                        </DropdownToggle>                                
+                                        <select className="mein-problem_children" caret>
+                                            Friends                               
                                         {friend.friends.map(friendofPerson => {
                                             return (
-                                        <DropdownMenu key={"".concat(friendofPerson.firstName, friendofPerson.lastName)} className="mein-problem-child">
+                                        <option key={"".concat(friendofPerson.firstName, friendofPerson.lastName)} className="mein-problem-child">
                                         <div className="meinProblemChild">{friendofPerson.firstName}{friendofPerson.lastName}</div>
-                                        </DropdownMenu>
+                                        </option>
                                             )})}
-                                </UncontrolledDropdown> 
+                                        </select>
                                 </Card> 
                             );
                         }
                     )} 
-                 })}
             </div>
         )
     }
