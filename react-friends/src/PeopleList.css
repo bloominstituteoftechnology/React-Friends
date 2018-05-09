@@ -1,0 +1,31 @@
+.People-Wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 25px;
+}
+
+h4 {
+    margin: 5px; 
+}
+
+.Name {
+    margin-top: 40px;
+    margin-bottom: 10px;
+    
+}
+
+.Email {
+    margin-bottom: 30px;
+}
+
+.Card {
+    height: 200px;
+    width: 300px;
+    background: lightseagreen;
+    margin: 20px 0;
+    border: 5px solid black;
+    box-shadow: 2px 4px red;
+    
+}
