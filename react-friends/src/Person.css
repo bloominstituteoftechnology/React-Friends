@@ -1,0 +1,24 @@
+.person{
+  padding: 60px;
+  border-bottom:1px dotted black;
+}
+.person:hover{
+  background:#d0d0d0;
+}
+.email{
+  padding:5px
+}
+.email:hover{
+  color:blue;
+  text-decoration:underline;
+  cursor:alias;
+}
+span {
+  font-size:1.5em;
+}
+
+
+
+
+
+
