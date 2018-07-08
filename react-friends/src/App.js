@@ -17,13 +17,18 @@ class App extends Component {
     this.setState({ people });
   }
 
+  // showFriends = (event) => {
+  //   event.preventDefault();
+    
+  // }
+
   render() {
     return (
       <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
         </header>
-        <PeopleList people = {this.state.people} />;
+        <PeopleList people={ this.state.people } showFriends={ this.showFriends } />
       </div>
     );
   }
