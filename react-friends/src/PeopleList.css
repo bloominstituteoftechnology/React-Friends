@@ -1,0 +1,12 @@
+.PeopleList {
+	margin: 15px;
+	padding: 15px;
+	width: 250px;
+	text-align: center;
+}
+
+.PeopleList__person {
+	display: inline-block;
+	max-width: 500px;
+	background-color: gray;
+}
