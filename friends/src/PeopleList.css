@@ -1,0 +1,8 @@
+.peeps--boxes {
+    display: flex;
+    justify-content: center;
+    border: 8px solid rgb(54, 54, 134);
+    padding: 25px;
+    margin: 20px;
+    font-size: 25px;
+}
